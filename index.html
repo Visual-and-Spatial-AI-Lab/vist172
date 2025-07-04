@@ -1,1 +1,369 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundations of Visual Computing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #eea485;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #591516;
+    }
+    footer {
+      background: #ddd;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 4px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        display: none;
+      }
+      td {
+        position: relative;
+        padding-left: 50%;
+      }
+      td::before {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+      td:nth-of-type(1)::before { content: "Week"; }
+      td:nth-of-type(2)::before { content: "Topic"; }
+      td:nth-of-type(3)::before { content: "Lecture Slides"; }
+      td:nth-of-type(4)::before { content: "Lab and Programming Challenge"; }
+      td:nth-of-type(5)::before { content: "Quizzes"; }
+    }
+  </style>
+</head>
+
+<!-- Continue with the website body -->
+<body>
+  <header>
+    <h1>Foundations of Visual Computing</h1>
+    <p>VIST 172, Fall 2025 | Texas A&M University, College Station</p>
+    <img src="course-logo/VIST-172-Fall25-logo.png" alt="Visual Computing 172 Course Logo" width="200" height="200" />
+  </header>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#assignments">Demo Codes</a>
+    <a href="#resources">Resources</a>
+    <a href="#staff">Staff</a>
+  </nav>
+  <div class="container">
+    <section id="overview">
+      <h2>Course Overview</h2>
+      <p>This course provides a comprehensive introduction to visual computing, covering core topics in image processing, computer vision, and graphics. It is designed for students interested in understanding the computational principles behind the analysis and synthesis of visual data.</p>
+      <p><a href="syllabus.pdf" target="_blank">Download Course Syllabus (PDF)</a></p>
+    </section>
+
+    <section id="schedule">
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:center;">Week</th>
+            <th style="text-align:center;">Topic</th>
+            <th style="text-align:center;">Lecture Slides</th>
+            <th style="text-align:center;">Lab and Programming Challenge</th>
+            <th style="text-align:center;">Quizzes</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Continue filling the table from Week 1 to Week 15 -->
+          <tr>
+            <td>Week 1</td>
+            <td>
+              <ul>
+                <li>Overview and Adminstrative Announcements</li>
+                <li>Python and Editor Installation</li>
+                <li>Introduction to Basic Python Programming</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Installing and testing of Python and Maya</li></td>
+            <td>Quiz 1</td>
+          </tr>
+
+          <tr>
+            <td>Week 2</td>
+            <td>
+              <ul>
+                <li>Turtle Graphics in Python</li>
+                <li>Introduction to Colors</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 1: Draw something exercise</li></td>
+            <td>Quiz 2</td>
+          </tr>
+
+          <tr>
+            <td>Week 3</td>
+            <td>
+              <ul>
+                <li>List in Python</li>
+                <li>List in Turtle Graphics</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Introduction to Python scripting</li></td>
+            <td>Quiz 3</td>
+          </tr>
+
+          <tr>
+            <td>Week 4</td>
+            <td>
+              <ul>
+                <li>Strings, List, and Inputs</li>
+                <li>Conditionals and Booleans</li>
+                <li>Loops in Python</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 2: Sorting squares</li></td>
+            <td>Quiz 4</td>
+          </tr>
+
+          <tr>
+            <td>Week 5</td>
+            <td>
+              <ul>
+                <li>Range, Division and Modulo</li>
+                <li>Computer Organization</li>
+                <li>Coordinate frames</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Conditionals and loops in scripts</li></td>
+            <td>Quiz 5</td>
+          </tr>
+
+          <tr>
+            <td>Week 6</td>
+            <td>
+              <ul>
+                <li>More on Loops and Demo</li>
+                <li>Fibonacci, Sorting a List</li>
+                <li>Tuples and Polygons</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 3: Drawing polygonal shapes </li></td>
+            <td>Quiz 6</td>
+          </tr>
+
+          <tr>
+            <td>Week 7</td>
+            <td>
+              <ul>
+                <li>Symmetry, Text, Images</li>
+                <li>Points, Vectors, and Lines</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Using lists in scripts</li></td>
+            <td>Quiz 7</td>
+          </tr>
+
+          <tr>
+            <td>Week 8</td>
+            <td>
+              <ul>
+                <li>Parametric Lines (starburst)</li>
+                <li>Trigonometry for graphics</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 4: Parametric lines </li></td>
+            <td>Quiz 8</td>
+          </tr>
+
+          <tr>
+            <td>Week 9</td>
+            <td>
+              <ul>
+                <li>Angles and Arc Length</li>
+                <li>Trigonometric Func. and Pythagorean Identities</li>
+                <li>Regular Polygon Turtle Demo</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Scripting scale and translation</li></td>
+            <td>Quiz 9</td>
+          </tr>
+
+          <tr>
+            <td>Week 10</td>
+            <td> <b>Transformation I</b>
+              <ul>
+                <li>Scale and translation</li>
+                <li>Combine scale and translation</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 5: Drawing regular polygons</li></td>
+            <td>Quiz 10</td>
+          </tr>
+
+          <tr>
+            <td>Week 11</td>
+            <td> <b>Transformation II</b>
+              <ul>
+                <li>Rotation</li>
+                <li>Affine Transformation</li>
+                <li>Basics of Matrix</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Scripting rotation</li></td>
+            <td>Quiz 11</td>
+          </tr>
+
+          <tr>
+            <td>Week 12</td>
+            <td> <b>Function I</b>
+              <ul>
+                <li>Scalar parameters and return values</li>
+                <li>Procedural Transform Demo</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge 6: Procedural transforms </li></td>
+            <td>Quiz 12</td>
+          </tr>
+
+          <tr>
+            <td>Week 13</td>
+            <td> <b>Function II</b>
+              <ul>
+                <li>Variable Scope</li>
+                <li>Lists, Tuples as parameters, and return value</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Use of functions in scripts</li></td>
+            <td>Quiz 13</td>
+          </tr>
+
+          <tr>
+            <td>Week 14</td>
+            <td> <b>File Handling</b>
+              <ul>
+                <li>Open, close, read, write</li>
+                <li>Exception Handling</li>
+                <li>Drawing Stored Model Demo</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Challenge: Drawing a stored model</li></td>
+            <td>Quiz 14</td>
+          </tr>
+
+          <tr>
+            <td>Week 15</td>
+            <td>
+              <ul>
+                <li>Statistical Visualization</li>
+                <li>Review</li>
+              </ul>
+            </td>
+            <td><a href="#">Slides</a></td>
+            <td><li>Maya: Lights, cameras, and rendering</li></td>
+            <td>Quiz 15</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="assignments">
+      <h2>Demo Codes</h2>
+      <p>Lecture codes will be posted here!</p>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li>Textbook: Szeliski, "Computer Vision: Algorithms and Applications"</li>
+        <li>Online Lectures and Slides (TBA)</li>
+        <li>GitHub Repository (if applicable)</li>
+      </ul>
+    </section>
+
+    <section id="staff">
+      <h2>Course Staff</h2>
+      <p><strong>Instructor:</strong> Dr. Suryansh Kumar (<a href="mailto:suryansh@tamu.edu">suryansh@tamu.edu</a>)</p>
+      <p><strong>Office Hours:</strong> TBA</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Department of Visualization, College of PVFA, Texas A&M University. All rights reserved.</p>
+  </footer>
+</body>
+
+<!-- Website body ends-->
+</html>
